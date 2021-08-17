@@ -1,18 +1,18 @@
-# Basic Calculus [![View <File Exchange Title> on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/####)
+# Calculus Derivatives [![View <File Exchange Title> on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/####)
 **Curriculum Module**  
-_Created with R2021b. Compatible with R2021b and later releases._  
+_Created with R2021a. Compatible with R2021a and later releases._  
 
 ## Description ##
-This curriculum module contains interactive [live scripts](https://www.mathworks.com/products/matlab/live-editor.html) and a [MATLAB&reg; app](https://www.mathworks.com/products/matlab/app-designer.html) that teach basic concepts of calculus including derivatives, integrals and limits. The module is divided into three sections: Derivatives, Integrals, and Limits. There is a focus on numerical approximation and graphical representation as tools for understanding the concepts of calculus.
+This curriculum module contains interactive [live scripts](https://www.mathworks.com/products/matlab/live-editor.html) that teach basic concepts of derivative calculus. There is a focus on numerical approximation and graphical representation as tools for understanding the concepts of calculus. 
 
-Derivatives covers the limit definition of the derivative, derivatives of powers, exponentials, natural logarithms, sines and cosines as well as linearity, and the product and chain rule for derivatives. Applications include parabolic motion, population growth, and oscillatory behavior. Integrals covers the Riemann sum definition of a definite integral, indefinite integrals as an inverse operation to derivatives, and the fundamental theorem of calculus. It also covers the indefinite integrals of powers, exponentials, natural logarithms, sines and cosines as well as the chain rule for integrals (u-substitution) and the product rule for integrals (integration by parts). Applications include area and power. Limits covers the concepts of asymptotes, removeable discontinuities, and essential discontinuties as they appear in common functions, rational functions, and piecewise-defined functions. Applications include steady-states, switches, and carrying capacity. 
+The derivatives module is divided into four scripts. The first covers the limit definition of the derivative and includes several motivating examples for the study of derivatives. The second covers derivatives of powers and the linearity of derivatives working from the limit definition of the derivative, including an application to parabolic motion. The third covers derivatives of exponentials, natural logarithms, sines and cosines as well as discussing higher order derivatives. Applications include population growth and oscillatory behavior. The fourth script presents visualizations of the product and chain rule for derivatives as well as randomly generated practice problems. Applications include related rates and the quotient rule for derivatives.
 
-These lessons can be used as part of a lecture, as activities in an instructional setting, or as interactive assignments to be completed outside of class.
+These lessons can be used as part of a lecture, as activities in an instructional setting, or as interactive assignments to be completed outside of class. All interactive exercises offer feedback while reflection questions are more open-ended and do not include solutions in this module. 
 
-The instructions inside the live scripts will guide you through the exercises and activities. Get started with each live script by running it one section at a time. To stop running the script or a section midway (for example, when an animation is in progress), use the Stop button in the RUN section of the Live Editor tab in the MATLAB Toolstrip.
+The instructions inside the live scripts will guide you through the exercises, examples, and activities. Get started with each live script by running it one section at a time. To stop running the script or a section midway (for example, when an animation is in progress), use the Stop button in the RUN section of the Live Editor tab in the MATLAB Toolstrip.
 
 ## Prerequisite Domain Knowledge ##
-This module assumes a knowledge of functions that is standard in precalculus course materials regarding powers, exponentials, absolute values, logarithms, sines, cosines, rational functions, and asymptotes. 
+This module assumes a knowledge of functions that is standard in precalculus course materials regarding powers, exponentials, absolute values, logarithms, sines, cosines, rational functions, and asymptotes. In addition, this module assumes basic fluency with limits in discussing the limit definition of the derivative.
 
 ## Suggested Prework ##
 [MATLAB Onramp](https://www.mathworks.com/learn/tutorials/matlab-onramp.html) – a free two-hour introductory tutorial that teaches the essentials of MATLAB.<br>
@@ -24,6 +24,7 @@ An interactive script that facilitates exploration of the limit definition of th
 **Learning Goals:**
 - Explain the limit definition of the derivative and its relationship to secant lines
 - Identify the sign of the derivative at a point as positive, negative, or zero based on the graph of a function
+- Identify points where the derivative of a continuous function does not exist and explain why with reference to the definition of the derivative
 - Recognize f'(x), df/dx, and d/dx[f(x)] as equivalent notation for the derivative of f with respect to x
 
 ## ##
@@ -56,38 +57,6 @@ An interactive script that presents visualizations of the chain rule and product
 - Apply the product rule to calculate derivatives
 - Fluently recognize and apply the rules for computing derivatives
 
-## ##
-
-- [ ] *Present details on each live script component of the module in the following format in its own subsection: Example follows*
-- [ ] *Title, e.g.* **`File.mlx, FileSoln.mlx`** or **`File.mlx`**
-- [ ] *One sentence summary of content*
-- [ ] *Blank line*
-- [ ] *Teaser image, e.g.* <img src="pendulum.gif" width="500"> or <img src="SystemBoxStep.png" width="500">
-- [ ] *Blank line*
-**Learning Goals:**
-- [ ] *List of Learning Goals*
-
-## ##
-**`Part0_ConceptReview.mlx, Part0_ConceptReviewSoln.mlx`**  
-An interactive lesson that reviews Laplace transforms.
-
-<img src="pendulum.gif" width="500">
-
-**Learning Goals:**
-- Compute Laplace transforms by hand and using symbolic math
-- Describe the properties of the Laplace transform
-- Apply Laplace transforms to solve initial value problems
-- Recall the definition of a linear time-invariant (LTI) operator
-
-## ##
-- [ ] *Present details on any addition and/or helper files, e.g., mlapps in the following format in its own subsection: Example follows*
-- [ ] *Title, e.g.* **`polesApp.mlapp`**
-- [ ] *Short summary of content and application. Why is this included?*
-
-## ##
-*List apps here with details, e.g.,*
-**`polesApp.mlapp`**  
-A MATLAB app that lets you construct a transfer function by graphically positioning the poles and zeros. You can also compute and plot the impulse and step responses.
 
 ## Products ##
 MATLAB, Symbolic Math Toolbox&trade;, Curve Fitting Toolbox&trade;
