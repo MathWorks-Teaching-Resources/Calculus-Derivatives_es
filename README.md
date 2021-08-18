@@ -21,6 +21,8 @@ This module assumes a knowledge of functions that is standard in precalculus cou
 **`derivativeDefinition.mlx`**
 An interactive script that facilitates exploration of the limit definition of the derivative and the relationship between slopes and derivatives. 
 
+<img src="SecantTangent.gif" width="500">
+
 **Learning Goals:**
 - Explain the limit definition of the derivative and its relationship to secant lines
 - Identify the sign of the derivative at a point as positive, negative, or zero based on the graph of a function
@@ -31,6 +33,8 @@ An interactive script that facilitates exploration of the limit definition of th
 **`derivativeRulesPolynomials.mlx`**
 An interactive script that facilitates exploration of the results of applying the limit definition of the derivative to powers to identify the power rule for derivatives. After introducing the linearity rules, there is the opportunity to generate and check random problems to practice applying the linearity and power rules for derivatives and an application to parabolic motion. 
 
+<img src="DQ.png" width="500">
+
 **Learning Goals:**
 - Explain why the limit definition of the derivative results in the power rule for derivatives
 - Compute the derivatives of linear combinations of powers by hand
@@ -39,6 +43,8 @@ An interactive script that facilitates exploration of the results of applying th
 ## ##
 **`derivativeRulesTranscendentals.mlx`**
 An interactive script that facilitates exploration of the derivatives of sines, cosines, exponential functions, natural logarithms, higher order derivatives, and unit analysis of derivatives.
+
+<img src="DerivativeOfSine.png" width="500">
 
 **Learning Goals:**
 - Determine the functional relationship of the derivatives of sines, cosines, exponentials, and natural logarithms
@@ -49,6 +55,8 @@ An interactive script that facilitates exploration of the derivatives of sines, 
 ## ## 
 **`derivativeRulesCombinations.mlx`**
 An interactive script that presents visualizations of the chain rule and product rule as well as the opportunity to practice derivatives.
+
+<img src="animateProductRule.gif" width="500">
 
 **Learning Goals:**
 - Explain why the chain rule is d/dx[f(g(x))] = f'(g(x))*g'(x)
