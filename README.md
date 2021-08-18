@@ -56,7 +56,7 @@ An interactive script that facilitates exploration of the derivatives of sines, 
 **`derivativeRulesCombinations.mlx`**
 An interactive script that presents visualizations of the chain rule and product rule as well as the opportunity to practice derivatives.
 
-<img src="animateProductRule.gif" width="500">
+<img src="animatedProductRule.gif" width="500">
 
 **Learning Goals:**
 - Explain why the chain rule is d/dx[f(g(x))] = f'(g(x))*g'(x)
