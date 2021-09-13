@@ -70,7 +70,7 @@ An interactive script that presents visualizations of the chain rule and product
 MATLAB, Symbolic Math Toolbox&trade;, Curve Fitting Toolbox&trade;
 
 ## License ##
-The license for this module is available in the [LICENSE.TXT](license.txt) file in this GitHub repository.
+The license for this module is available in the [LICENSE.md](LICENSE.md) file in this GitHub repository.
 
 ## Support ##
 Have any questions or feedback? Contact the <a href="mailto:onlineteaching@mathworks.com">MathWorks online teaching team.</a>
