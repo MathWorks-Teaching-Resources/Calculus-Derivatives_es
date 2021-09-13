@@ -9,7 +9,7 @@ The derivatives module is divided into four scripts. The first covers the limit 
 
 These lessons can be used as part of a lecture, as activities in an instructional setting, or as interactive assignments to be completed outside of class. All interactive exercises offer feedback while reflection questions are more open-ended and do not include solutions in this module. 
 
-The instructions inside the live scripts will guide you through the exercises, examples, and activities. Get started with each live script by running it one section at a time. To stop running the script or a section midway (for example, when an animation is in progress), use the Stop button in the RUN section of the Live Editor tab in the MATLAB Toolstrip.
+The instructions inside the live scripts will guide you through the exercises, examples, and activities. Get started with each live script by running it one section at a time. To stop running the script or a section midway (for example, when an animation is in progress), use the **Stop** button in the **Run** section of the **Live Editor** tab in the MATLAB Toolstrip.
 
 ## Prerequisite Domain Knowledge ##
 This module assumes a knowledge of functions that is standard in precalculus course materials regarding powers, exponentials, absolute values, logarithms, sines, cosines, rational functions, and asymptotes. In addition, this module assumes basic fluency with limits in discussing the limit definition of the derivative.
@@ -21,7 +21,7 @@ This module assumes a knowledge of functions that is standard in precalculus cou
 **`derivativeDefinition.mlx`**
 An interactive script that facilitates exploration of the limit definition of the derivative and the relationship between slopes and derivatives. 
 
-<img src="SecantTangent.gif" width="500">
+<img src="CD/SecantTangent.gif" width="500">
 
 **Learning Goals:**
 - Explain the limit definition of the derivative and its relationship to secant lines
@@ -33,7 +33,7 @@ An interactive script that facilitates exploration of the limit definition of th
 **`derivativeRulesPolynomials.mlx`**
 An interactive script that facilitates exploration of the results of applying the limit definition of the derivative to powers to identify the power rule for derivatives. After introducing the linearity rules, there is the opportunity to generate and check random problems to practice applying the linearity and power rules for derivatives and an application to parabolic motion. 
 
-<img src="DQ.png" width="500">
+<img src="CD/DQ.png" width="500">
 
 **Learning Goals:**
 - Explain why the limit definition of the derivative results in the power rule for derivatives
@@ -44,7 +44,7 @@ An interactive script that facilitates exploration of the results of applying th
 **`derivativeRulesTranscendentals.mlx`**
 An interactive script that facilitates exploration of the derivatives of sines, cosines, exponential functions, natural logarithms, higher order derivatives, and unit analysis of derivatives.
 
-<img src="DerivativeOfSine.png" width="500">
+<img src="CD/DerivativeOfSine.png" width="500">
 
 **Learning Goals:**
 - Determine the functional relationship of the derivatives of sines, cosines, exponentials, and natural logarithms
@@ -56,7 +56,7 @@ An interactive script that facilitates exploration of the derivatives of sines, 
 **`derivativeRulesCombinations.mlx`**
 An interactive script that presents visualizations of the chain rule and product rule as well as the opportunity to practice derivatives.
 
-<img src="animatedProductRule.gif" width="500">
+<img src="CD/animatedProductRule.gif" width="500">
 
 **Learning Goals:**
 - Explain why the chain rule is d/dx[f(g(x))] = f'(g(x))*g'(x)
@@ -67,7 +67,7 @@ An interactive script that presents visualizations of the chain rule and product
 
 
 ## Products ##
-MATLAB, Symbolic Math Toolbox&trade;, Curve Fitting Toolbox&trade;
+MATLAB(R), Symbolic Math Toolbox&trade;, Curve Fitting Toolbox&trade;
 
 ## License ##
 The license for this module is available in the [LICENSE.md](LICENSE.md) file in this GitHub repository.
