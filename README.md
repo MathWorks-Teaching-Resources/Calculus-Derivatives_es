@@ -21,7 +21,7 @@ This module assumes a knowledge of functions that is standard in precalculus cou
 **`derivativeDefinition.mlx`**
 An interactive script that facilitates exploration of the limit definition of the derivative and the relationship between slopes and derivatives. 
 
-<img src="CD/SecantTangent.gif" width="500">
+<img src="https://user-images.githubusercontent.com/88841524/133293637-b133ac39-394e-4f1a-a7a9-6f4641d9867c.gif" width="500">
 
 **Learning Goals:**
 - Explain the limit definition of the derivative and its relationship to secant lines
@@ -33,7 +33,7 @@ An interactive script that facilitates exploration of the limit definition of th
 **`derivativeRulesPolynomials.mlx`**
 An interactive script that facilitates exploration of the results of applying the limit definition of the derivative to powers to identify the power rule for derivatives. After introducing the linearity rules, there is the opportunity to generate and check random problems to practice applying the linearity and power rules for derivatives and an application to parabolic motion. 
 
-<img src="CD/DQ.png" width="500">
+<img src="https://user-images.githubusercontent.com/88841524/133293628-e7954ef1-4cf9-413b-be38-9ec565285f59.png" width="500">
 
 **Learning Goals:**
 - Explain why the limit definition of the derivative results in the power rule for derivatives
@@ -44,7 +44,7 @@ An interactive script that facilitates exploration of the results of applying th
 **`derivativeRulesTranscendentals.mlx`**
 An interactive script that facilitates exploration of the derivatives of sines, cosines, exponential functions, natural logarithms, higher order derivatives, and unit analysis of derivatives.
 
-<img src="CD/DerivativeOfSine.png" width="500">
+<img src="https://user-images.githubusercontent.com/88841524/133293596-fdff62a2-77d9-40bd-b5ca-253e8ace2350.png" width="500">
 
 **Learning Goals:**
 - Determine the functional relationship of the derivatives of sines, cosines, exponentials, and natural logarithms
@@ -56,7 +56,7 @@ An interactive script that facilitates exploration of the derivatives of sines, 
 **`derivativeRulesCombinations.mlx`**
 An interactive script that presents visualizations of the chain rule and product rule as well as the opportunity to practice derivatives.
 
-<img src="CD/animatedProductRule.gif" width="500">
+<img src="https://user-images.githubusercontent.com/88841524/133293543-8bd879ff-9b17-4143-8798-e8c6d43514a2.gif" width="500">
 
 **Learning Goals:**
 - Explain why the chain rule is d/dx[f(g(x))] = f'(g(x))*g'(x)
