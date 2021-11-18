@@ -1,4 +1,4 @@
-# Calculus Derivatives [![View <File Exchange Title> on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/####)
+# Calculus Derivatives [![View <File Exchange Title> on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/99249-calculus-derivatives)
 **Curriculum Module**  
 _Created with R2021a. Compatible with R2021a and later releases._  
 
@@ -21,7 +21,7 @@ This module assumes a knowledge of functions that is standard in precalculus cou
 **`derivativeDefinition.mlx`**
 An interactive script that facilitates exploration of the limit definition of the derivative and the relationship between slopes and derivatives. 
 
-<img src="https://user-images.githubusercontent.com/88841524/133293637-b133ac39-394e-4f1a-a7a9-6f4641d9867c.gif" width="500">
+<img src="https://user-images.githubusercontent.com/88841524/133808342-49edbbd4-d381-4c63-bd2c-64c485728c71.gif" width="500">
 
 **Learning Goals:**
 - Explain the limit definition of the derivative and its relationship to secant lines
@@ -72,7 +72,11 @@ MATLAB&reg;, Symbolic Math Toolbox&trade;, Curve Fitting Toolbox&trade;
 ## License ##
 The license for this module is available in the [LICENSE.md](LICENSE.md) file in this GitHub repository.
 
-## Support ##
+## Educator Resources ##
+- [Featured Courseware](https://www.mathworks.com/academia/courseware/course-materials.html)
+- [Teach with MATLAB and Simulink](https://www.mathworks.com/academia/educators.html)
+- [MATLAB Grader](https://www.mathworks.com/products/matlab-grader.html)
+  
 Have any questions or feedback? Contact the <a href="mailto:onlineteaching@mathworks.com">MathWorks online teaching team.</a>
 
 # #
