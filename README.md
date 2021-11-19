@@ -3,7 +3,7 @@
 _Created with R2021a. Compatible with R2021a and later releases._  
 
 ## Description ##
-This curriculum module contains interactive [live scripts](https://www.mathworks.com/products/matlab/live-editor.html) that teach basic concepts of derivative calculus. There is a focus on numerical approximation and graphical representation as tools for understanding the concepts of calculus. 
+This curriculum module contains interactive [live scripts](https://www.mathworks.com/products/matlab/live-editor.html) and [MATLAB&reg; apps](https://www.mathworks.com/products/matlab/app-designer.html) that teach basic concepts of derivative calculus. There is a focus on numerical approximation and graphical representation as tools for understanding the concepts of calculus. 
 
 The derivatives module is divided into four scripts and a practice app. The first covers the limit definition of the derivative and includes several motivating examples for the study of derivatives. The second covers derivatives of powers and the linearity of derivatives working from the limit definition of the derivative, including an application to parabolic motion. The third covers derivatives of exponentials, natural logarithms, sines and cosines as well as discussing higher order derivatives. Applications include population growth and oscillatory behavior. The fourth script presents visualizations of the product and chain rule for derivatives as well as randomly generated practice problems. Applications include related rates and the quotient rule for derivatives. The Calculus Flashcards app allows users to select the types of derivative (or integral) rules they wish to practice, generates randomized problems, and tracks their progress within a session.
 
@@ -71,17 +71,20 @@ A MATLAB app that allows the user to select among four different categories of d
 
 <img src="https://user-images.githubusercontent.com/88841524/142695933-c8fde966-d89e-4f2f-9d9f-e9445b52d1c8.png" width="500">
 
+**Learning Goals:**
+- Computational fluency with common functions and interactions including linearity, the product rule, and the chain rule.
+
 ## Setup 
 ### MATLAB&reg;
 
 1. Ensure that you have MATLAB R2021a or newer installed.
-2. Download `CalculusFlashcards.mlapp`, for instance by downloading and unzipping the entire repository.
-3. Right-click the app in MATLAB and select <b>run</b>.
+2. Download `CalculusFlashcards.mlapp` or download and unzip the entire repository.
+3. Right-click the app in MATLAB and select <b>run</b> or double click on the live script (.mlx file) that you wish to run.
 
 ### MATLAB Online&trade;
 1. Download `CalculusFlashcards.mlapp` or download and unzip the entire repository. 
 2. Drag and drop `CalculusFlashcards.mlapp` into the Current Folder in <a href="https://matlab.mathworks.com/">MATLAB Online</a>.
-3. Right-click the `CalculusFlashcards.mlapp` and select <b>run</b>.
+3. Right-click the `CalculusFlashcards.mlapp` and select <b>run</b> or double click on the live script (.mlx file) that you wish to run.
 
 ## Products ##
 MATLAB&reg;, Symbolic Math Toolbox&trade;, Curve Fitting Toolbox&trade;
