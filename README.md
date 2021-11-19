@@ -5,7 +5,7 @@ _Created with R2021a. Compatible with R2021a and later releases._
 ## Description ##
 This curriculum module contains interactive [live scripts](https://www.mathworks.com/products/matlab/live-editor.html) that teach basic concepts of derivative calculus. There is a focus on numerical approximation and graphical representation as tools for understanding the concepts of calculus. 
 
-The derivatives module is divided into four scripts. The first covers the limit definition of the derivative and includes several motivating examples for the study of derivatives. The second covers derivatives of powers and the linearity of derivatives working from the limit definition of the derivative, including an application to parabolic motion. The third covers derivatives of exponentials, natural logarithms, sines and cosines as well as discussing higher order derivatives. Applications include population growth and oscillatory behavior. The fourth script presents visualizations of the product and chain rule for derivatives as well as randomly generated practice problems. Applications include related rates and the quotient rule for derivatives.
+The derivatives module is divided into four scripts and a practice app. The first covers the limit definition of the derivative and includes several motivating examples for the study of derivatives. The second covers derivatives of powers and the linearity of derivatives working from the limit definition of the derivative, including an application to parabolic motion. The third covers derivatives of exponentials, natural logarithms, sines and cosines as well as discussing higher order derivatives. Applications include population growth and oscillatory behavior. The fourth script presents visualizations of the product and chain rule for derivatives as well as randomly generated practice problems. Applications include related rates and the quotient rule for derivatives. The Calculus Flashcards app allows users to select the types of derivative (or integral) rules they wish to practice, generates randomized problems, and tracks their progress within a session.
 
 These lessons can be used as part of a lecture, as activities in an instructional setting, or as interactive assignments to be completed outside of class. All interactive exercises offer feedback while reflection questions are more open-ended and do not include solutions in this module. 
 
@@ -65,6 +65,9 @@ An interactive script that presents visualizations of the chain rule and product
 - Apply the product rule to calculate derivatives
 - Fluently recognize and apply the rules for computing derivatives
 
+## ##
+**`CalculusFlashcards.mlapp`**
+A MATLAB app that allows the user to select among four different categories of derivative practice (simple derivatives, linear combinations of powers, product rule, and chain rule) or integral practice (simple integrals, definite integrals, substitution, and integration by parts) or any combination thereof. Variables can be restricted to x and t or varied randomly over a larger set of options. The solutions can be displayed immediately or multiple attempts at each problem can be recorded. Results are tracked by type of problem including correct solutions, incorrect solutions, and problems which are not even attempted before generating a new one. 
 
 ## Products ##
 MATLAB&reg;, Symbolic Math Toolbox&trade;, Curve Fitting Toolbox&trade;
