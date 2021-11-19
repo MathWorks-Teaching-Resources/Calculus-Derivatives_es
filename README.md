@@ -69,6 +69,20 @@ An interactive script that presents visualizations of the chain rule and product
 **`CalculusFlashcards.mlapp`**
 A MATLAB app that allows the user to select among four different categories of derivative practice (simple derivatives, linear combinations of powers, product rule, and chain rule) or integral practice (simple integrals, definite integrals, substitution, and integration by parts) or any combination thereof. Variables can be restricted to x and t or varied randomly over a larger set of options. The solutions can be displayed immediately or multiple attempts at each problem can be recorded. Results are tracked by type of problem including correct solutions, incorrect solutions, and problems which are not even attempted before generating a new one. 
 
+<img src="https://user-images.githubusercontent.com/88841524/142695933-c8fde966-d89e-4f2f-9d9f-e9445b52d1c8.png" width="500">
+
+## Setup 
+### MATLAB&reg;
+
+1. Ensure that you have MATLAB R2021a or newer installed.
+2. Download `CalculusFlashcards.mlapp`, for instance by downloading and unzipping the entire repository.
+3. Right-click the app in MATLAB and select <b>run</b>.
+
+### MATLAB Online&trade;
+1. Download `CalculusFlashcards.mlapp` or download and unzip the entire repository. 
+2. Drag and drop `CalculusFlashcards.mlapp` into the Current Folder in <a href="https://matlab.mathworks.com/">MATLAB Online</a>.
+3. Right-click the `CalculusFlashcards.mlapp` and select <b>run</b>.
+
 ## Products ##
 MATLAB&reg;, Symbolic Math Toolbox&trade;, Curve Fitting Toolbox&trade;
 
