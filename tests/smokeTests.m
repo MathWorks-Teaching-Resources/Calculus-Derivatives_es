@@ -3,30 +3,51 @@ classdef smokeTests < matlab.unittest.TestCase
 
     methods(Test)
 
-        function run(testCase)
+        function runDerDef(testCase)
             import matlab.unittest.diagnostics.FigureDiagnostic;
-            testCase.log("Running UsingPythonWithMATLAB.mlx")
+            testCase.log("Running derivativeDefintion.mlx")
             fig = figure;
             testCase.addTeardown(@close,fig)
-            run("UsingPythonWithMATLAB.mlx")
+            derivativeDefinition
             testCase.log(3,FigureDiagnostic(fig))
         end
 
-        function runMyWeatherDashboard(testCase)
+        function runRulesPowers(testCase)
             import matlab.unittest.diagnostics.FigureDiagnostic;
             fig = figure;
             testCase.addTeardown(@close,fig)
-            testCase.log("Running MyWeatherDashboard.mlx")
-            run("MyWeatherDashboard.mlx");
+            testCase.log("Running derivativeRulesPowers.mlx")
+            derivativeRulesPowers
         end
 
-        function runCheckingTheWeather(testCase)
+        function runTran(testCase)
             import matlab.unittest.diagnostics.FigureDiagnostic;
-            testCase.log("Running CheckingTheWeather.mlx")
+            testCase.log("Running derivativeRulesTranscendentals.mlx")
             fig = figure;
             testCase.addTeardown(@close,fig)
-            run("CheckingTheWeather.mlx")
+            derivativeRulesTranscendentals
             testCase.log(3,FigureDiagnostic(fig))
+        end
+
+        function runComb(testCase)
+            import matlab.unittest.diagnostics.FigureDiagnostic;
+            testCase.log("Running derivativeRulesCombinations.mlx")
+            fig = figure;
+            testCase.log(3,FigureDiagnostic(fig))
+            testCase.addTeardown(@close,fig)
+            derivativeRulesCombinations
+        end
+
+        function runTayPoly(testCase)
+            import matlab.unittest.diagnostics.FigureDiagnostic;
+            testCase.log("Running TaylorPolynomials.mlx")
+            fig = figure;
+            testCase.addTeardown(@close,fig)
+            TaylorPolynomials
+        end
+
+        function runFlashcards(testCase)
+            CalculusFlashcards
         end
 
     end
