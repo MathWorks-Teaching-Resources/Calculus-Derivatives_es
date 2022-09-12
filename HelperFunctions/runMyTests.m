@@ -1,13 +1,11 @@
-function [results,T] = runMyTests()
-
 import matlab.unittest.plugins.TestReportPlugin;
 
 runner = matlab.unittest.TestRunner.withTextOutput;
 runner.addPlugin(TestReportPlugin.producingHTML('Verbosity',3))
 
-results = runner.run(testsuite("tests"));
+results = runner.run(testsuite("tests"))
 
-T = table(results);
+T = table(results)
 
 % Alternate Option using runtests() rather than testsuite()
 % Because this one will not create the HTML output, it logs to a 
@@ -21,7 +19,4 @@ T = table(results);
 % results1 = runtests("smokeTests")
 % results2 = runtests("functionTests")
 % diary("off")
-% results = [results1 results2];
-% T = table(results);
-
-end
+% T = table([results1,results2])
