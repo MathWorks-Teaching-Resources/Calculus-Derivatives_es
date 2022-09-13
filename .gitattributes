@@ -17,7 +17,9 @@
 *.sltx binary
 *.slxc binary
 *.slx binary merge=mlAutoMerge
+*.mlx binary merge=mlAutoMerge
 *.slxp binary
+
 
 ## Other common binary file types
 *.docx binary
@@ -26,3 +28,7 @@
 *.pdf binary
 *.png binary
 *.xlsx binary
+
+# Ignore HTML
+
+*.html linguist-detectable=false

@@ -1,4 +1,6 @@
-# Calculus Derivatives [![View <File Exchange Title> on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/99249-calculus-derivatives)
+# Calculus Derivatives 
+[![View <File Exchange Title> on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/99249-calculus-derivatives) or
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj)
 **Curriculum Module**  
 _Created with R2021a. Compatible with R2021a and later releases._  
 
@@ -18,7 +20,8 @@ This module assumes a knowledge of functions that is standard in precalculus cou
 [MATLAB Onramp](https://www.mathworks.com/learn/tutorials/matlab-onramp.html) – a free two-hour introductory tutorial that teaches the essentials of MATLAB.<br>
 
 ## Details ##
-**`derivativeDefinition.mlx`**
+**`derivativeDefinition.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=derivativeDefinition.mlx)
+
 An interactive script that facilitates exploration of the limit definition of the derivative and the relationship between slopes and derivatives. 
 
 <img src="https://user-images.githubusercontent.com/88841524/133808342-49edbbd4-d381-4c63-bd2c-64c485728c71.gif" width="500">
@@ -30,7 +33,8 @@ An interactive script that facilitates exploration of the limit definition of th
 - Recognize f'(x), df/dx, and d/dx[f(x)] as equivalent notation for the derivative of f with respect to x
 
 ## ##
-**`derivativeRulesPolynomials.mlx`**
+**`derivativeRulesPolynomials.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=derivativeRulesPolynomials.mlx)
+
 An interactive script that facilitates exploration of the results of applying the limit definition of the derivative to powers to identify the power rule for derivatives. After introducing the linearity rules, there is the opportunity to generate and check random problems to practice applying the linearity and power rules for derivatives and an application to parabolic motion. 
 
 <img src="https://user-images.githubusercontent.com/88841524/133293628-e7954ef1-4cf9-413b-be38-9ec565285f59.png" width="500">
@@ -41,7 +45,8 @@ An interactive script that facilitates exploration of the results of applying th
 - Apply derivatives to solve practical questions
 
 ## ##
-**`derivativeRulesTranscendentals.mlx`**
+**`derivativeRulesTranscendentals.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=derivativeRulesTranscendentals.mlx)
+
 An interactive script that facilitates exploration of the derivatives of sines, cosines, exponential functions, natural logarithms, higher order derivatives, and unit analysis of derivatives.
 
 <img src="https://user-images.githubusercontent.com/88841524/133293596-fdff62a2-77d9-40bd-b5ca-253e8ace2350.png" width="500">
@@ -53,7 +58,8 @@ An interactive script that facilitates exploration of the derivatives of sines, 
 - Explore simple first and second order differential equations that describe physical systems to create mathematical models of the system
 
 ## ## 
-**`derivativeRulesCombinations.mlx`**
+**`derivativeRulesCombinations.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=derivativeRulesCombinations.mlx)
+
 An interactive script that presents visualizations of the chain rule and product rule as well as the opportunity to practice derivatives.
 
 <img src="https://user-images.githubusercontent.com/88841524/133293543-8bd879ff-9b17-4143-8798-e8c6d43514a2.gif" width="500">
@@ -66,7 +72,20 @@ An interactive script that presents visualizations of the chain rule and product
 - Fluently recognize and apply the rules for computing derivatives
 
 ## ##
-**`CalculusFlashcards.mlapp`**
+**`TaylorPolynomials.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=TaylorPolynomials.mlx)
+
+An interactive script that builds on the idea of approximating functions from tangent lines to Taylor Polynomials.
+
+<img src="https://user-images.githubusercontent.com/88841524/189995690-20f236ef-d94b-45d5-a1ee-45c6c2616779.gif" width="500">
+
+**Learning Goals:**
+- Identify and construct tangent lines.
+- Identify and construct quadratic approximations.
+- Use the structure of Taylor Polynomials to construct higher order approximations to differentiable functions.
+
+## ##
+**`CalculusFlashcards.mlapp`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=CalculusFlashcards.mlapp)
+
 A MATLAB app that allows the user to select among four different categories of derivative practice (simple derivatives, linear combinations of powers, product rule, and chain rule) or integral practice (simple integrals, definite integrals, substitution, and integration by parts) or any combination thereof. Variables can be restricted to x and t or varied randomly over a larger set of options. The solutions can be displayed immediately or multiple attempts at each problem can be recorded. Results are tracked by type of problem including correct solutions, incorrect solutions, and problems which are not even attempted before generating a new one. 
 
 <img src="https://user-images.githubusercontent.com/88841524/142695933-c8fde966-d89e-4f2f-9d9f-e9445b52d1c8.png" width="500">
@@ -92,6 +111,11 @@ MATLAB&reg;, Symbolic Math Toolbox&trade;, Curve Fitting Toolbox&trade;
 ## License ##
 The license for this module is available in the [LICENSE.md](LICENSE.md) file in this GitHub repository.
 
+## Related Courseware Modules ##
+**Calculus: Integrals** is available on [GitHub](https://github.com/MathWorks-Teaching-Resources/Calculus-Integrals) or 
+[![View Calculus-Integrals on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/105740-calculus-integrals) or
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj)
+
 ## Educator Resources ##
 - [Featured Courseware](https://www.mathworks.com/academia/courseware/course-materials.html)
 - [Teach with MATLAB and Simulink](https://www.mathworks.com/academia/educators.html)
@@ -100,4 +124,4 @@ The license for this module is available in the [LICENSE.md](LICENSE.md) file in
 Have any questions or feedback? Contact the <a href="mailto:onlineteaching@mathworks.com">MathWorks online teaching team.</a>
 
 # #
-_Copyright 2021 The MathWorks, Inc._
+_Copyright 2021-2022 The MathWorks, Inc._
