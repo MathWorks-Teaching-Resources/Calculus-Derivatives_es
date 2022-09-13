@@ -3,6 +3,14 @@ classdef smokeTests < matlab.unittest.TestCase
 
     methods(Test)
 
+        function runTayPoly(testCase)
+            import matlab.unittest.diagnostics.FigureDiagnostic;
+            testCase.log("Running TaylorPolynomials.mlx")
+            fig = figure;
+            testCase.addTeardown(@close,fig)
+            TaylorPolynomials
+        end
+
         function runDerDef(testCase)
             import matlab.unittest.diagnostics.FigureDiagnostic;
             testCase.log("Running derivativeDefintion.mlx")
@@ -36,14 +44,6 @@ classdef smokeTests < matlab.unittest.TestCase
             testCase.log(3,FigureDiagnostic(fig))
             testCase.addTeardown(@close,fig)
             derivativeRulesCombinations
-        end
-
-        function runTayPoly(testCase)
-            import matlab.unittest.diagnostics.FigureDiagnostic;
-            testCase.log("Running TaylorPolynomials.mlx")
-            fig = figure;
-            testCase.addTeardown(@close,fig)
-            TaylorPolynomials
         end
 
         function runFlashcards(testCase)
