@@ -52,7 +52,7 @@
 % Minimal MATLAB fluency is required to use this module; primarily it is standard calculator-type mathematics 
 %         such as using * for multiplication and / for division. For commands that go beyond interacting with 
 %         a calculator, the necessary knowledge is included in the module. If you want to improve your MATLAB 
-%         knowledge, <a href="https://www.mathworks.com/learn/tutorials/matlab-onramp.html">MATLAB
+%         knowledge, <a href="https://matlabacademy.mathworks.com/details/matlab-onramp/gettingstarted">MATLAB
 % Onramp</a> is a free two-hour introductory tutorial that teaches the essentials of MATLAB.
 % <br>
 % <br>
