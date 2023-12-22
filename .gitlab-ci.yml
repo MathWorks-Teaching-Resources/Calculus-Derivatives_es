@@ -29,6 +29,7 @@ smoke-test:
     when: always
     allow_failure: true
     artifacts:
+      when: always
       paths:
         - public/*
       expire_in: 1 years
