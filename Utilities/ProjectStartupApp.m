@@ -132,7 +132,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
                 Request.Header    = HeaderField("X-GitHub-Api-Version","2022-11-28");
                 Request.Header(2) = HeaderField("Accept","application/vnd.github+json");
                 [Answer,~,~] = send(Request,Address);
-                websave(fullfile("Utilities/SurveyLinks.mat"),Answer.Body.Data.download_url)
+                websave(fullfile("Utilities/SurveyLinks.mat"),Answer.Body.Data.download_url);
             catch
             end
 
@@ -225,28 +225,28 @@ classdef ProjectStartupApp < matlab.apps.AppBase
             app.WelcomeTitle.FontSize = 24;
             app.WelcomeTitle.FontWeight = 'bold';
             app.WelcomeTitle.Position = [2 349 274 70];
-            app.WelcomeTitle.Text = 'Welcome to Calculus: Derivatives';
+            app.WelcomeTitle.Text = 'Bienvenido a Cálculo: Derivadas';
 
             % Create MainMenuButton
             app.MainMenuButton = uibutton(app.WelcomeTab, 'push');
             app.MainMenuButton.ButtonPushedFcn = createCallbackFcn(app, @MainMenuButtonPushed, true);
             app.MainMenuButton.FontSize = 18;
             app.MainMenuButton.Position = [59 96 161 35];
-            app.MainMenuButton.Text = 'Main Menu';
+            app.MainMenuButton.Text = 'Menú Principal';
 
             % Create ReviewUsButton
             app.ReviewUsButton = uibutton(app.WelcomeTab, 'push');
             app.ReviewUsButton.ButtonPushedFcn = createCallbackFcn(app, @ReviewUsButtonPushed, true);
             app.ReviewUsButton.FontSize = 18;
             app.ReviewUsButton.Position = [59 10 161 35];
-            app.ReviewUsButton.Text = 'Review Us';
+            app.ReviewUsButton.Text = 'Evalúanos';
 
             % Create READMEButton
             app.READMEButton = uibutton(app.WelcomeTab, 'push');
             app.READMEButton.ButtonPushedFcn = createCallbackFcn(app, @READMEButtonPushed, true);
             app.READMEButton.FontSize = 18;
             app.READMEButton.Position = [59 53 161 35];
-            app.READMEButton.Text = 'README';
+            app.READMEButton.Text = 'LEEME';
 
             % Create Image
             app.Image = uiimage(app.WelcomeTab);
@@ -266,7 +266,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
             app.ReviewText.WordWrap = 'on';
             app.ReviewText.FontSize = 18;
             app.ReviewText.Position = [16 243 245 69];
-            app.ReviewText.Text = 'Plese help us improve your experience by answering a few questions.';
+            app.ReviewText.Text = 'Por favor, ayúdanos a mejorar tu experiencia respondiendo algunas preguntas.';
 
             % Create ReviewTitle
             app.ReviewTitle = uilabel(app.TabReview);
@@ -276,7 +276,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
             app.ReviewTitle.FontSize = 24;
             app.ReviewTitle.FontWeight = 'bold';
             app.ReviewTitle.Position = [2 326 274 93];
-            app.ReviewTitle.Text = 'Welcome to Calculus: Derivatives';
+            app.ReviewTitle.Text = 'Bienvenido a Cálculo: Derivadas';
 
             % Create Q1
             app.Q1 = uilabel(app.TabReview);
@@ -286,28 +286,28 @@ classdef ProjectStartupApp < matlab.apps.AppBase
             app.Q1.FontSize = 18;
             app.Q1.FontWeight = 'bold';
             app.Q1.Position = [16 141 245 69];
-            app.Q1.Text = 'What describe you best?';
+            app.Q1.Text = '¿Qué te describe mejor?';
 
             % Create FacultyButton
             app.FacultyButton = uibutton(app.TabReview, 'push');
             app.FacultyButton.ButtonPushedFcn = createCallbackFcn(app, @FacultyButtonPushed, true);
             app.FacultyButton.FontSize = 18;
             app.FacultyButton.Position = [64 127 150 40];
-            app.FacultyButton.Text = 'Faculty';
+            app.FacultyButton.Text = 'Profesorado';
 
             % Create StudentButton
             app.StudentButton = uibutton(app.TabReview, 'push');
             app.StudentButton.ButtonPushedFcn = createCallbackFcn(app, @StudentButtonPushed, true);
             app.StudentButton.FontSize = 18;
             app.StudentButton.Position = [64 80 150 40];
-            app.StudentButton.Text = 'Student';
+            app.StudentButton.Text = 'Estudiante';
 
             % Create OtherButton
             app.OtherButton = uibutton(app.TabReview, 'push');
             app.OtherButton.ButtonPushedFcn = createCallbackFcn(app, @OtherButtonPushed, true);
             app.OtherButton.FontSize = 18;
             app.OtherButton.Position = [64 34 150 40];
-            app.OtherButton.Text = 'Other';
+            app.OtherButton.Text = 'Otro';
 
             % Show the figure after all components are created
             app.UIFigure.Visible = 'on';
