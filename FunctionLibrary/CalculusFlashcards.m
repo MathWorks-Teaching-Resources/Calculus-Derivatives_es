@@ -96,6 +96,7 @@ classdef CalculusFlashcards < matlab.apps.AppBase
         showSoln        % a boolean that tracks whether solutions should be shown
         newQuestionFlag % a boolean that tracks whether a new question is currently showing
         needNewQuesFlag % a boolean that tracks whether the current question is of an unselected probType
+        baseFontSize = 18;
     end
 
     methods (Access = private)
@@ -115,7 +116,6 @@ classdef CalculusFlashcards < matlab.apps.AppBase
         function genProb(app)
             % Clear the warning from the previous problem
             app.Warning.Text = " ";
-            app.Warning.FontColor = [0.85,0.33,0.10];
             if ~isempty(app.probOpts)
                 app.varChoice = app.varOpts(randi([1 length(app.varOpts)], 1));
                 app.probType = app.probOpts(randi([1 length(app.probOpts)],1));
@@ -161,7 +161,6 @@ classdef CalculusFlashcards < matlab.apps.AppBase
             end
             if app.Warning.Text == " " 
                 app.Warning.Text = "Si es necesario, las advertencias se mostrarán aquí.";
-                app.Warning.FontColor = [0 0 0];
             end
         end
 
@@ -691,34 +690,8 @@ classdef CalculusFlashcards < matlab.apps.AppBase
                 "pestaña 'Análisis' para ver cómo te va en cada tipo de problema.";
             app.prevFuncType = 0;
             % Set Font Size
-            app.ProbStatement.FontSize = 14;
-            app.SolutionEditField.FontSize = 14;
-            % Set colors
-%             app.ProblemasdePrcticaTab.ForegroundColor = [0,0,0];
-%             app.AnalysisTab.ForegroundColor = [0,0,0];
-%             app.ConfiguracinTab.ForegroundColor = [0,0,0];
-%             app.GenerateProblemButton.BackgroundColor = [0,128,19]./255;
-%             app.SubmitSolutionButton.BackgroundColor = [0,75,135]./255;
-%             app.SubmitSolutionButton.FontColor = [1,1,1];
-%             app.PreviewSolutionButton.BackgroundColor = [0,169,224]./255;
-%             app.PracticeMoreProblemsButton.BackgroundColor = [0,128,19]./255;
-%             app.ProblemTypesPanel.BackgroundColor = [119,48,186]./255;
-%             app.ProblemTypesPanel.ForegroundColor = [1,1,1];
-%             app.VariableOptionsButtonGroup.BackgroundColor = [119,48,186]./255;
-%             app.VariableOptionsButtonGroup.ForegroundColor = [1,1,1];
-%             app.xortButton.FontColor = [1,1,1];
-%             app.variousButton.FontColor = [1,1,1];
-%             app.ShowsolutionsButtonGroup.BackgroundColor = [119,48,186]./255;
-%             app.ShowsolutionsButtonGroup.ForegroundColor = [1,1,1];
-%             app.NoButton.FontColor = [1,1,1];
-%             app.YesButton.FontColor = [1,1,1];
-%             app.ClearHistoryButton.BackgroundColor = [192,76,11]./255;
-%             app.ClearHistoryButton.FontColor = [1,1,1];
-%             app.PracticeProblemsButton.BackgroundColor = [0,128,19]./255;
-%             app.PracticeMoreProblemsButton.FontColor = [1,1,1];
-%             app.PracticeProblemsButton.FontColor = [1,1,1];
-%             app.GenerateProblemButton.FontColor = [1,1,1];
-%             app.ViewAnalysisButton.BackgroundColor = [237,177,32]./255;
+            app.ProbStatement.FontSize = app.baseFontSize;
+            app.SolutionEditField.FontSize = app.baseFontSize;
         end
 
         % Button pushed function: GenerateProblemButton
@@ -1025,7 +998,6 @@ classdef CalculusFlashcards < matlab.apps.AppBase
             app.GridLayout = uigridlayout(app.CalculusFlashcardsAppUIFigure);
             app.GridLayout.ColumnWidth = {'1x'};
             app.GridLayout.RowHeight = {'1x'};
-%            app.GridLayout.BackgroundColor = [0.96078431372549 0.96078431372549 0.96078431372549];
 
             % Create TabGroup
             app.TabGroup = uitabgroup(app.GridLayout);
@@ -1040,24 +1012,20 @@ classdef CalculusFlashcards < matlab.apps.AppBase
             app.GridLayout12 = uigridlayout(app.ConfiguracinTab);
             app.GridLayout12.ColumnWidth = {'1x'};
             app.GridLayout12.RowHeight = {'1x', '1x', '4x'};
-%            app.GridLayout12.BackgroundColor = [0.96078431372549 0.96078431372549 0.96078431372549];
 
             % Create ProblemTypesPanel
             app.ProblemTypesPanel = uipanel(app.GridLayout12);
-%            app.ProblemTypesPanel.ForegroundColor = [1 1 1];
             app.ProblemTypesPanel.TitlePosition = 'centertop';
             app.ProblemTypesPanel.Title = 'Tipos de Problemas';
-%            app.ProblemTypesPanel.BackgroundColor = [0 0.4471 0.7412];
             app.ProblemTypesPanel.Layout.Row = 3;
             app.ProblemTypesPanel.Layout.Column = 1;
             app.ProblemTypesPanel.FontWeight = 'bold';
-            app.ProblemTypesPanel.FontSize = 16;
+            app.ProblemTypesPanel.FontSize = app.baseFontSize+2;
 
             % Create GridLayout13
             app.GridLayout13 = uigridlayout(app.ProblemTypesPanel);
             app.GridLayout13.ColumnWidth = {'1x', '1x', '1x'};
             app.GridLayout13.RowHeight = {'1x'};
-%            app.GridLayout13.BackgroundColor = [0.96078431372549 0.96078431372549 0.96078431372549];
 
             % Create DerivativesPanel
             app.DerivativesPanel = uipanel(app.GridLayout13);
@@ -1066,43 +1034,39 @@ classdef CalculusFlashcards < matlab.apps.AppBase
             app.DerivativesPanel.Layout.Row = 1;
             app.DerivativesPanel.Layout.Column = 1;
             app.DerivativesPanel.FontWeight = 'bold';
-            app.DerivativesPanel.FontSize = 14;
+            app.DerivativesPanel.FontSize = app.baseFontSize;
 
             % Create allderivativesCheckBox
             app.allderivativesCheckBox = uicheckbox(app.DerivativesPanel);
             app.allderivativesCheckBox.ValueChangedFcn = createCallbackFcn(app, @setTypeOptions, true);
+           %app.allderivativesCheckBox.WordWrap = "on";
             app.allderivativesCheckBox.Text = 'Todas las derivadas';
-%            app.allderivativesCheckBox.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
-            app.allderivativesCheckBox.Position = [55 224 96 22];
+            app.allderivativesCheckBox.Position = [55 224 150 30];
 
             % Create productruleDerCheckBox
             app.productruleDerCheckBox = uicheckbox(app.DerivativesPanel);
             app.productruleDerCheckBox.ValueChangedFcn = createCallbackFcn(app, @setTypeOptions, true);
             app.productruleDerCheckBox.Text = 'Regla del Producto';
-%            app.productruleDerCheckBox.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
-            app.productruleDerCheckBox.Position = [55 7 91 22];
+            app.productruleDerCheckBox.Position = [55 7 150 30];
 
             % Create simplederivativesCheckBox
             app.simplederivativesCheckBox = uicheckbox(app.DerivativesPanel);
             app.simplederivativesCheckBox.ValueChangedFcn = createCallbackFcn(app, @setTypeOptions, true);
             app.simplederivativesCheckBox.Text = 'Derivadas de Funciones';
-%            app.simplederivativesCheckBox.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
-            app.simplederivativesCheckBox.Position = [55 148 150 22];
+            app.simplederivativesCheckBox.Position = [55 148 150 30];
 
             % Create chainruleDerCheckBox
             app.chainruleDerCheckBox = uicheckbox(app.DerivativesPanel);
             app.chainruleDerCheckBox.ValueChangedFcn = createCallbackFcn(app, @setTypeOptions, true);
             app.chainruleDerCheckBox.Text = 'Regla de la Cadena';
-%            app.chainruleDerCheckBox.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
-            app.chainruleDerCheckBox.Position = [55 54 81 22];
+            app.chainruleDerCheckBox.Position = [55 54 150 30];
 
             % Create powerrulelinearityDerCheckBox
             app.powerrulelinearityDerCheckBox = uicheckbox(app.DerivativesPanel);
             app.powerrulelinearityDerCheckBox.ValueChangedFcn = createCallbackFcn(app, @setTypeOptions, true);
             app.powerrulelinearityDerCheckBox.Text = 'Reglas de Potencia y Linealidad';
             app.powerrulelinearityDerCheckBox.WordWrap = 'on';
-%            app.powerrulelinearityDerCheckBox.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
-            app.powerrulelinearityDerCheckBox.Position = [55 101 165 22];
+            app.powerrulelinearityDerCheckBox.Position = [55 101 165 30];
 
             % Create IntegralsPanel
             app.IntegralsPanel = uipanel(app.GridLayout13);
@@ -1111,43 +1075,41 @@ classdef CalculusFlashcards < matlab.apps.AppBase
             app.IntegralsPanel.Layout.Row = 1;
             app.IntegralsPanel.Layout.Column = 3;
             app.IntegralsPanel.FontWeight = 'bold';
-            app.IntegralsPanel.FontSize = 14;
+            app.IntegralsPanel.FontSize = app.baseFontSize;
 
             % Create allintegralsCheckBox
             app.allintegralsCheckBox = uicheckbox(app.IntegralsPanel);
             app.allintegralsCheckBox.ValueChangedFcn = createCallbackFcn(app, @setTypeOptions, true);
             app.allintegralsCheckBox.Text = 'Todas las integrales';
-%            app.allintegralsCheckBox.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
-            app.allintegralsCheckBox.Position = [57 224 84 22];
+            app.allintegralsCheckBox.WordWrap = "on";
+            app.allintegralsCheckBox.Position = [57 224 157 30];
 
             % Create bypartsIntCheckBox
             app.bypartsIntCheckBox = uicheckbox(app.IntegralsPanel);
             app.bypartsIntCheckBox.ValueChangedFcn = createCallbackFcn(app, @setTypeOptions, true);
             app.bypartsIntCheckBox.Text = 'Integración por Partes';
-%            app.bypartsIntCheckBox.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
-            app.bypartsIntCheckBox.Position = [54 7 126 22];
+            app.bypartsIntCheckBox.WordWrap = "on";
+            app.bypartsIntCheckBox.Position = [54 7 156 30];
 
             % Create simpleintegralCheckBox
             app.simpleintegralCheckBox = uicheckbox(app.IntegralsPanel);
             app.simpleintegralCheckBox.ValueChangedFcn = createCallbackFcn(app, @setTypeOptions, true);
             app.simpleintegralCheckBox.Text = 'Integrales de Funciones';
-%            app.simpleintegralCheckBox.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
-            app.simpleintegralCheckBox.Position = [54 148 137 22];
+            app.simpleintegralCheckBox.WordWrap = "on";
+            app.simpleintegralCheckBox.Position = [54 148 157 30];
 
             % Create substitutionIntCheckBox
             app.substitutionIntCheckBox = uicheckbox(app.IntegralsPanel);
             app.substitutionIntCheckBox.ValueChangedFcn = createCallbackFcn(app, @setTypeOptions, true);
             app.substitutionIntCheckBox.Text = 'Sustitución';
-%            app.substitutionIntCheckBox.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
-            app.substitutionIntCheckBox.Position = [54 54 85 22];
+            app.substitutionIntCheckBox.Position = [54 54 85 30];
 
             % Create definiteIntCheckBox
             app.definiteIntCheckBox = uicheckbox(app.IntegralsPanel);
             app.definiteIntCheckBox.ValueChangedFcn = createCallbackFcn(app, @setTypeOptions, true);
             app.definiteIntCheckBox.Text = 'Integrales Definidas';
             app.definiteIntCheckBox.WordWrap = 'on';
-%            app.definiteIntCheckBox.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
-            app.definiteIntCheckBox.Position = [54 101 165 22];
+            app.definiteIntCheckBox.Position = [54 101 165 30];
 
             % Create GridLayout14
             app.GridLayout14 = uigridlayout(app.GridLayout13);
@@ -1155,7 +1117,6 @@ classdef CalculusFlashcards < matlab.apps.AppBase
             app.GridLayout14.RowHeight = {'1x', '1x', '1x'};
             app.GridLayout14.Layout.Row = 1;
             app.GridLayout14.Layout.Column = 2;
-%            app.GridLayout14.BackgroundColor = [0.96078431372549 0.96078431372549 0.96078431372549];
 
             % Create RandomizePanel
             app.RandomizePanel = uipanel(app.GridLayout14);
@@ -1164,76 +1125,68 @@ classdef CalculusFlashcards < matlab.apps.AppBase
             app.RandomizePanel.Layout.Row = 1;
             app.RandomizePanel.Layout.Column = 1;
             app.RandomizePanel.FontWeight = 'bold';
-            app.RandomizePanel.FontSize = 14;
+            app.RandomizePanel.FontSize = app.baseFontSize;
 
             % Create allTypesCheckBox
             app.allTypesCheckBox = uicheckbox(app.RandomizePanel);
             app.allTypesCheckBox.ValueChangedFcn = createCallbackFcn(app, @setTypeOptions, true);
             app.allTypesCheckBox.Text = 'Todas las derivadas e integrales';
-            % app.allTypesCheckBox.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
-            app.allTypesCheckBox.Position = [28 23 168 22];
+            app.allTypesCheckBox.WordWrap = "on";
+            app.allTypesCheckBox.Position = [28 23 168 30];
 
             % Create FunctionTypesPanel
             app.FunctionTypesPanel = uipanel(app.GridLayout14);
-            % app.FunctionTypesPanel.ForegroundColor = [0 0 0];
             app.FunctionTypesPanel.TitlePosition = 'centertop';
             app.FunctionTypesPanel.Title = 'Tipos de Funciones';
-            % app.FunctionTypesPanel.BackgroundColor = [0.94 0.94 0.94];
             app.FunctionTypesPanel.Layout.Row = [2 3];
             app.FunctionTypesPanel.Layout.Column = 1;
             app.FunctionTypesPanel.FontWeight = 'bold';
-            app.FunctionTypesPanel.FontSize = 14;
+            app.FunctionTypesPanel.FontSize = app.baseFontSize;
 
             % Create PolynomialFunctions
             app.PolynomialFunctions = uicheckbox(app.FunctionTypesPanel);
             app.PolynomialFunctions.ValueChangedFcn = createCallbackFcn(app, @FunctionsValueChanged, true);
             app.PolynomialFunctions.Text = 'Polinomios';
-%            app.PolynomialFunctions.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
             app.PolynomialFunctions.Position = [28 119 87 22];
 
             % Create ExpLnFunctions
             app.ExpLnFunctions = uicheckbox(app.FunctionTypesPanel);
             app.ExpLnFunctions.ValueChangedFcn = createCallbackFcn(app, @FunctionsValueChanged, true);
             app.ExpLnFunctions.Text = 'Exponenciales y logaritmos';
-%            app.ExpLnFunctions.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
             app.ExpLnFunctions.Position = [28 76 173 22];
 
             % Create TrigFunctions
             app.TrigFunctions = uicheckbox(app.FunctionTypesPanel);
             app.TrigFunctions.ValueChangedFcn = createCallbackFcn(app, @FunctionsValueChanged, true);
             app.TrigFunctions.Text = 'Funciones trigonométricas';
-%            app.TrigFunctions.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
-            app.TrigFunctions.Position = [28 32 146 22];
+            app.TrigFunctions.WordWrap = "on";
+            app.TrigFunctions.Position = [28 32 156 30];
 
             % Create GridLayout18
             app.GridLayout18 = uigridlayout(app.GridLayout12);
             app.GridLayout18.RowHeight = {'1x'};
             app.GridLayout18.Layout.Row = 1;
             app.GridLayout18.Layout.Column = 1;
-%            app.GridLayout18.BackgroundColor = [0.96078431372549 0.96078431372549 0.96078431372549];
 
             % Create VariableOptionsButtonGroup
             app.VariableOptionsButtonGroup = uibuttongroup(app.GridLayout18);
             app.VariableOptionsButtonGroup.SelectionChangedFcn = createCallbackFcn(app, @setVarOpts, true);
             app.VariableOptionsButtonGroup.TitlePosition = 'centertop';
             app.VariableOptionsButtonGroup.Title = 'Opciones de Variables';
-%            app.VariableOptionsButtonGroup.BackgroundColor = [0.9412 0.9412 0.9412];
             app.VariableOptionsButtonGroup.Layout.Row = 1;
             app.VariableOptionsButtonGroup.Layout.Column = 1;
             app.VariableOptionsButtonGroup.FontWeight = 'bold';
-            app.VariableOptionsButtonGroup.FontSize = 14;
+            app.VariableOptionsButtonGroup.FontSize = app.baseFontSize;
 
             % Create variousButton
             app.variousButton = uiradiobutton(app.VariableOptionsButtonGroup);
             app.variousButton.Text = 'varios';
- %           app.variousButton.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
             app.variousButton.Position = [76 27 61 22];
             app.variousButton.Value = true;
 
             % Create xortButton
             app.xortButton = uiradiobutton(app.VariableOptionsButtonGroup);
             app.xortButton.Text = 'x o t';
-%            app.xortButton.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
             app.xortButton.Position = [239 27 65 22];
 
             % Create ShowsolutionsButtonGroup
@@ -1244,19 +1197,17 @@ classdef CalculusFlashcards < matlab.apps.AppBase
             app.ShowsolutionsButtonGroup.Layout.Row = 1;
             app.ShowsolutionsButtonGroup.Layout.Column = 2;
             app.ShowsolutionsButtonGroup.FontWeight = 'bold';
-            app.ShowsolutionsButtonGroup.FontSize = 14;
+            app.ShowsolutionsButtonGroup.FontSize = app.baseFontSize;
 
             % Create YesButton
             app.YesButton = uiradiobutton(app.ShowsolutionsButtonGroup);
             app.YesButton.Text = 'Sí';
- %           app.YesButton.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
             app.YesButton.Position = [97 27 58 22];
             app.YesButton.Value = true;
 
             % Create NoButton
             app.NoButton = uiradiobutton(app.ShowsolutionsButtonGroup);
             app.NoButton.Text = 'No';
-%            app.NoButton.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
             app.NoButton.Position = [225 27 65 22];
 
             % Create GridLayout22
@@ -1265,13 +1216,11 @@ classdef CalculusFlashcards < matlab.apps.AppBase
             app.GridLayout22.RowHeight = {'1x'};
             app.GridLayout22.Layout.Row = 2;
             app.GridLayout22.Layout.Column = 1;
- %           app.GridLayout22.BackgroundColor = [0.96078431372549 0.96078431372549 0.96078431372549];
 
             % Create SettingsMessage
             app.SettingsMessage = uilabel(app.GridLayout22);
-%            app.SettingsMessage.BackgroundColor = [0.9412 0.9412 0.9412];
+            app.SettingsMessage.WordWrap = "on";
             app.SettingsMessage.HorizontalAlignment = 'center';
-%            app.SettingsMessage.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
             app.SettingsMessage.Layout.Row = 1;
             app.SettingsMessage.Layout.Column = 1;
 
@@ -1284,7 +1233,6 @@ classdef CalculusFlashcards < matlab.apps.AppBase
             app.GridLayout2 = uigridlayout(app.ProblemasdePrcticaTab);
             app.GridLayout2.ColumnWidth = {'1x'};
             app.GridLayout2.RowHeight = {'1x'};
-%            app.GridLayout2.BackgroundColor = [0.96078431372549 0.96078431372549 0.96078431372549];
 
             % Create GridLayout3
             app.GridLayout3 = uigridlayout(app.GridLayout2);
@@ -1292,7 +1240,6 @@ classdef CalculusFlashcards < matlab.apps.AppBase
             app.GridLayout3.RowHeight = {'2x', '1x', '3x'};
             app.GridLayout3.Layout.Row = 1;
             app.GridLayout3.Layout.Column = 1;
-%            app.GridLayout3.BackgroundColor = [0.96078431372549 0.96078431372549 0.96078431372549];
 
             % Create GridLayout4
             app.GridLayout4 = uigridlayout(app.GridLayout3);
@@ -1300,14 +1247,11 @@ classdef CalculusFlashcards < matlab.apps.AppBase
             app.GridLayout4.RowHeight = {'0.2x', '2x', '2x'};
             app.GridLayout4.Layout.Row = 1;
             app.GridLayout4.Layout.Column = 1;
-%            app.GridLayout4.BackgroundColor = [0.96078431372549 0.96078431372549 0.96078431372549];
 
             % Create GenerateProblemButton
             app.GenerateProblemButton = uibutton(app.GridLayout4, 'push');
             app.GenerateProblemButton.ButtonPushedFcn = createCallbackFcn(app, @GenerateProblemButtonPushed, true);
             app.GenerateProblemButton.WordWrap = 'on';
-%            app.GenerateProblemButton.BackgroundColor = [0.96078431372549 0.96078431372549 0.96078431372549];
-%            app.GenerateProblemButton.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
             app.GenerateProblemButton.Layout.Row = 2;
             app.GenerateProblemButton.Layout.Column = 1;
             app.GenerateProblemButton.Text = 'Generar Problema';
@@ -1318,13 +1262,10 @@ classdef CalculusFlashcards < matlab.apps.AppBase
             app.GridLayout5.RowHeight = {'2x', '1x'};
             app.GridLayout5.Layout.Row = 1;
             app.GridLayout5.Layout.Column = 2;
-%            app.GridLayout5.BackgroundColor = [0.96078431372549 0.96078431372549 0.96078431372549];
 
             % Create ProbStatement
             app.ProbStatement = uilabel(app.GridLayout5);
-%            app.ProbStatement.BackgroundColor = [0.9412 0.9412 0.9412];
             app.ProbStatement.HorizontalAlignment = 'center';
-%            app.ProbStatement.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
             app.ProbStatement.Layout.Row = 1;
             app.ProbStatement.Layout.Column = 1;
             app.ProbStatement.Interpreter = 'latex';
@@ -1332,10 +1273,8 @@ classdef CalculusFlashcards < matlab.apps.AppBase
 
             % Create Warning
             app.Warning = uilabel(app.GridLayout5);
-%            app.Warning.BackgroundColor = [0.9412 0.9412 0.9412];
             app.Warning.HorizontalAlignment = 'center';
             app.Warning.WordWrap = 'on';
-%            app.Warning.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
             app.Warning.Layout.Row = 2;
             app.Warning.Layout.Column = 1;
             app.Warning.Interpreter = 'latex';
@@ -1347,18 +1286,15 @@ classdef CalculusFlashcards < matlab.apps.AppBase
             app.GridLayout6.RowHeight = {'1x'};
             app.GridLayout6.Layout.Row = 2;
             app.GridLayout6.Layout.Column = 2;
- %           app.GridLayout6.BackgroundColor = [0.96078431372549 0.96078431372549 0.96078431372549];
 
             % Create SolutionEditField
             app.SolutionEditField = uieditfield(app.GridLayout6, 'text');
-%            app.SolutionEditField.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
             app.SolutionEditField.Layout.Row = 1;
             app.SolutionEditField.Layout.Column = 2;
 
             % Create SolPrompt
             app.SolPrompt = uilabel(app.GridLayout6);
             app.SolPrompt.HorizontalAlignment = 'right';
-%            app.SolPrompt.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
             app.SolPrompt.Layout.Row = 1;
             app.SolPrompt.Layout.Column = 1;
             app.SolPrompt.Interpreter = 'latex';
@@ -1367,17 +1303,14 @@ classdef CalculusFlashcards < matlab.apps.AppBase
             % Create GridLayout7
             app.GridLayout7 = uigridlayout(app.GridLayout3);
             app.GridLayout7.ColumnWidth = {'1x'};
-            app.GridLayout7.RowHeight = {'0.1x', '1x', '1.1x', '1x', '1x'};
+            app.GridLayout7.RowHeight = {'0.1x', '1.1x', '1x', '1x', '1x'};
             app.GridLayout7.Layout.Row = 3;
             app.GridLayout7.Layout.Column = 1;
-%            app.GridLayout7.BackgroundColor = [0.96078431372549 0.96078431372549 0.96078431372549];
 
             % Create SubmitSolutionButton
             app.SubmitSolutionButton = uibutton(app.GridLayout7, 'push');
             app.SubmitSolutionButton.ButtonPushedFcn = createCallbackFcn(app, @SubmitSolutionButtonPushed, true);
             app.SubmitSolutionButton.WordWrap = 'on';
-%            app.SubmitSolutionButton.BackgroundColor = [0.96078431372549 0.96078431372549 0.96078431372549];
-%            app.SubmitSolutionButton.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
             app.SubmitSolutionButton.Layout.Row = 4;
             app.SubmitSolutionButton.Layout.Column = 1;
             app.SubmitSolutionButton.Text = 'Enviar Solución';
@@ -1386,8 +1319,6 @@ classdef CalculusFlashcards < matlab.apps.AppBase
             app.PreviewSolutionButton = uibutton(app.GridLayout7, 'push');
             app.PreviewSolutionButton.ButtonPushedFcn = createCallbackFcn(app, @PreviewSolutionButtonPushed, true);
             app.PreviewSolutionButton.WordWrap = 'on';
-%            app.PreviewSolutionButton.BackgroundColor = [0.96078431372549 0.96078431372549 0.96078431372549];
-%            app.PreviewSolutionButton.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
             app.PreviewSolutionButton.Layout.Row = 2;
             app.PreviewSolutionButton.Layout.Column = 1;
             app.PreviewSolutionButton.Text = 'Vista Previa de la Solución';
@@ -1398,7 +1329,6 @@ classdef CalculusFlashcards < matlab.apps.AppBase
             app.GridLayout15.RowHeight = {'1x', '9x', '1x'};
             app.GridLayout15.Layout.Row = 2;
             app.GridLayout15.Layout.Column = 1;
-%            app.GridLayout15.BackgroundColor = [0.96078431372549 0.96078431372549 0.96078431372549];
 
             % Create GridLayout16
             app.GridLayout16 = uigridlayout(app.GridLayout3);
@@ -1406,7 +1336,6 @@ classdef CalculusFlashcards < matlab.apps.AppBase
             app.GridLayout16.RowHeight = {'1x', '2x'};
             app.GridLayout16.Layout.Row = 3;
             app.GridLayout16.Layout.Column = 2;
-%            app.GridLayout16.BackgroundColor = [0.96078431372549 0.96078431372549 0.96078431372549];
 
             % Create GridLayout17
             app.GridLayout17 = uigridlayout(app.GridLayout16);
@@ -1414,13 +1343,10 @@ classdef CalculusFlashcards < matlab.apps.AppBase
             app.GridLayout17.RowHeight = {'1x'};
             app.GridLayout17.Layout.Row = 1;
             app.GridLayout17.Layout.Column = 1;
-%            app.GridLayout17.BackgroundColor = [0.96078431372549 0.96078431372549 0.96078431372549];
 
             % Create ProposedSolnLabel
             app.ProposedSolnLabel = uilabel(app.GridLayout17);
-%            app.ProposedSolnLabel.BackgroundColor = [0.9412 0.9412 0.9412];
             app.ProposedSolnLabel.HorizontalAlignment = 'right';
-%            app.ProposedSolnLabel.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
             app.ProposedSolnLabel.Layout.Row = 1;
             app.ProposedSolnLabel.Layout.Column = 1;
             app.ProposedSolnLabel.Interpreter = 'latex';
@@ -1428,9 +1354,7 @@ classdef CalculusFlashcards < matlab.apps.AppBase
 
             % Create ProposedSoln
             app.ProposedSoln = uilabel(app.GridLayout17);
-            app.ProposedSoln.BackgroundColor = [1 1 1];
             app.ProposedSoln.WordWrap = 'on';
-%            app.ProposedSoln.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
             app.ProposedSoln.Layout.Row = 1;
             app.ProposedSoln.Layout.Column = 2;
             app.ProposedSoln.Interpreter = 'latex';
@@ -1438,9 +1362,7 @@ classdef CalculusFlashcards < matlab.apps.AppBase
 
             % Create FeedbackStatement
             app.FeedbackStatement = uilabel(app.GridLayout16);
-%            app.FeedbackStatement.BackgroundColor = [0.9412 0.9412 0.9412];
             app.FeedbackStatement.WordWrap = 'on';
-%            app.FeedbackStatement.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
             app.FeedbackStatement.Layout.Row = 2;
             app.FeedbackStatement.Layout.Column = 1;
             app.FeedbackStatement.Interpreter = 'latex';
@@ -1455,7 +1377,6 @@ classdef CalculusFlashcards < matlab.apps.AppBase
             app.GridLayout19 = uigridlayout(app.AnalysisTab);
             app.GridLayout19.ColumnWidth = {'1x'};
             app.GridLayout19.RowHeight = {161, '1.5x', '1x'};
-%            app.GridLayout19.BackgroundColor = [0.96078431372549 0.96078431372549 0.96078431372549];
 
             % Create UIAxes
             app.UIAxes = uiaxes(app.GridLayout19);
@@ -1479,7 +1400,6 @@ classdef CalculusFlashcards < matlab.apps.AppBase
             app.GridLayout20.RowHeight = {'1x'};
             app.GridLayout20.Layout.Row = 2;
             app.GridLayout20.Layout.Column = 1;
-%            app.GridLayout20.BackgroundColor = [0.96078431372549 0.96078431372549 0.96078431372549];
 
             % Create GridLayout23
             app.GridLayout23 = uigridlayout(app.GridLayout20);
@@ -1487,13 +1407,11 @@ classdef CalculusFlashcards < matlab.apps.AppBase
             app.GridLayout23.RowHeight = {'1x', '1x', '1x'};
             app.GridLayout23.Layout.Row = 1;
             app.GridLayout23.Layout.Column = 2;
-%            app.GridLayout23.BackgroundColor = [0.96078431372549 0.96078431372549 0.96078431372549];
 
             % Create ClearHistoryButton
             app.ClearHistoryButton = uibutton(app.GridLayout23, 'push');
             app.ClearHistoryButton.ButtonPushedFcn = createCallbackFcn(app, @ClearHistoryButtonPushed, true);
- %           app.ClearHistoryButton.BackgroundColor = [0.96078431372549 0.96078431372549 0.96078431372549];
- %           app.ClearHistoryButton.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
+            app.ClearHistoryButton.WordWrap = "on";
             app.ClearHistoryButton.Layout.Row = 2;
             app.ClearHistoryButton.Layout.Column = 1;
             app.ClearHistoryButton.Text = 'Borrar Historial';
@@ -1504,13 +1422,10 @@ classdef CalculusFlashcards < matlab.apps.AppBase
             app.GridLayout24.RowHeight = {'1x'};
             app.GridLayout24.Layout.Row = 1;
             app.GridLayout24.Layout.Column = 1;
-%            app.GridLayout24.BackgroundColor = [0.96078431372549 0.96078431372549 0.96078431372549];
 
             % Create AnalysisFeedback
             app.AnalysisFeedback = uilabel(app.GridLayout24);
-%            app.AnalysisFeedback.BackgroundColor = [0.9412 0.9412 0.9412];
             app.AnalysisFeedback.WordWrap = 'on';
-%            app.AnalysisFeedback.FontColor = [0.129411764705882 0.129411764705882 0.129411764705882];
             app.AnalysisFeedback.Layout.Row = 1;
             app.AnalysisFeedback.Layout.Column = 2;
             app.AnalysisFeedback.Interpreter = 'latex';
