@@ -417,7 +417,7 @@ classdef CalculusFlashcards < matlab.apps.AppBase
                 app.FeedbackStatement.Text = "Esta respuesta está faltando +C. ";
                 isCorrect = 0;
             elseif contains(app.probType,"Int") && ~contains(app.probType,"def") ...
-                && isAlways(diff(correctAnswer,app.varChoice) == diff(app.myAnswer,app.varChoice))
+                && isAlways(diff(correctAnswer,app.varChoice) == diff(app.myAnswer,app.varChoice),"Unknown","false")
                 app.FeedbackStatement.Text = "Esta solución es correcta. Otra forma equivalente es: " + ...
                     "$\displaystyle " + latex(correctAnswer - C) + " + C$";
                 isCorrect = 1;
