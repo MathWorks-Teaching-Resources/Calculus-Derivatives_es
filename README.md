@@ -81,7 +81,7 @@ Se utilizan MATLAB® y Symbolic Math Toolbox™ en todo el módulo. Las herramie
 | <img src="Images/taylorpolyexample.gif" width="171" alt="animación de aproximación de polinomios de Taylor"> |-  calcularán líneas tangentes. <br>-  calcularán aproximaciones cuadráticas. <br>-  calcularán aproximaciones polinómicas de orden superior.  |
 
 <a name="H_A8913F44"></a>
-# App: [Tarjetas Educativas de Cálculo](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives_es&project=Derivatives.prj&file=Apps/CalculusFlashcards.mlapp&focus=true)
+# App: [Tarjetas Educativas de Cálculo](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives_es&project=Derivatives.prj&file=Apps/TarjetasDeCalculo.m&focus=true)
 
 Practica reconociendo y resolviendo problemas computacionales estándar en cálculo.
 
