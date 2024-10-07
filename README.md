@@ -1,7 +1,7 @@
 
 # <span style="color:rgb(213,80,0)">Cálculo: Derivadas</span>
 
-[![View on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/99249-calculus-derivatives) or [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives_es&project=Derivatives.prj&file=README.mlx)
+[![View on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/173660-calculo-derivadas) or [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives_es&project=Derivatives.prj&file=README.mlx)
 
 ![MATLAB Versions Tested](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FMathWorks-Teaching-Resources%2FCalculus-Derivatives_es%2Frelease%2FImages%2FTestedWith.json)
 
@@ -90,12 +90,12 @@ Practica reconociendo y resolviendo problemas computacionales estándar en cálc
 <a name="H_F61733D7"></a>
 # Licencia
 
-La licencia para este módulo está disponible en el archivo [LICENSE.md](https://github.com/MathWorks-Teaching-Resources/Calculus-Derivatives/blob/release/LICENSE.md).
+La licencia para este módulo está disponible en el archivo [LICENSE.md](https://github.com/MathWorks-Teaching-Resources/Calculus-Derivatives_es/blob/release/LICENSE.md).
 
 # Módulos de Curso Relacionados
 | **Módulo de Curso** | **Contenido de Muestra** | **Disponible en:**  |
 | :-- | :-- | :-- |
-| [**Cálculo: Integrales**](https://www.mathworks.com/matlabcentral/fileexchange/105740-calculus-integrals) | <img src="Images/image_9.png" width="171" alt="image_9.png"> | [<img src="Images/OpenInFX.png" width="91" alt="OpenInFX.png">](https://www.mathworks.com/matlabcentral/fileexchange/105740-calculus-integrals)<br>[<img src="Images/OpenInMO.png" width="136" alt="OpenInMO.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals_es&project=Integrals.prj)<br> [GitHub](https://github.com/MathWorks-Teaching-Resources/Calculus-Integrals_es)   |
+| [**Cálculo: Integrales**](https://www.mathworks.com/matlabcentral/fileexchange/173655-calculo-integrales) | <img src="Images/image_9.png" width="171" alt="image_9.png"> | [<img src="Images/OpenInFX.png" width="91" alt="OpenInFX.png">](https://www.mathworks.com/matlabcentral/fileexchange/173655-calculo-integrales)<br>[<img src="Images/OpenInMO.png" width="136" alt="OpenInMO.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals_es&project=Integrals.prj)<br> [GitHub](https://github.com/MathWorks-Teaching-Resources/Calculus-Integrals_es)   |
 | [**Análisis de Fourier**](https://www.mathworks.com/matlabcentral/fileexchange/135291-analisis-de-fourier) | <img src="Images/image_12.png" width="171" alt="image_12.png"> | [<img src="Images/OpenInFX.png" width="91" alt="OpenInFX.png">](https://www.mathworks.com/matlabcentral/fileexchange/135291-analisis-de-fourier)<br>[<img src="Images/OpenInMO.png" width="136" alt="OpenInMO.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Fourier-Analysis_es&project=FourierAnalysis.prj)<br>[GitHub](https://github.com/MathWorks-Teaching-Resources/Fourier-Analysis_es)  |
 | <br>[**Métodos Numéricos con Aplicaciones** (en inglés)](https://www.mathworks.com/matlabcentral/fileexchange/111490-numerical-methods-with-applications) | <img src="Images/image_15.png" width="171" alt="image_15.png"> | <br>[<img src="Images/OpenInFX.png" width="91" alt="OpenInFX.png">](https://www.mathworks.com/matlabcentral/fileexchange/111490-numerical-methods-with-applications)<br>[<img src="Images/OpenInMO.png" width="136" alt="OpenInMO.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Numerical-Methods-with-Applications&project=NumericalMethods.prj)  <br>[GitHub](https://github.com/MathWorks-Teaching-Resources/Numerical-Methods-with-Applications)   |
 
