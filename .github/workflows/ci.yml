@@ -40,6 +40,7 @@ jobs:
           release: ${{ matrix.MATLABVersion }}
           products: >
             Symbolic_Math_Toolbox
+            Curve_Fitting_Toolbox
           # Simulink Statistics_and_Machine_Learning_Toolbox
           # List required products above in the format shown (and uncomment them)
           # List of product strings:
@@ -58,6 +59,7 @@ jobs:
 
       # Upload the test results as artifact
       - name: Upload TestResults
+        if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
           name: TestResults_${{ matrix.MATLABVersion }}
