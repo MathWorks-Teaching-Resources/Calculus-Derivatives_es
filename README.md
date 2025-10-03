@@ -1,6 +1,8 @@
 
 # <span style="color:rgb(213,80,0)">Cálculo: Derivadas</span>
 
+Aprenda cómo calcular derivadas, comprenda y utilice las reglas del producto y la cadena, y calcule polinomios de Taylor.
+
 [![View on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/173660-calculo-derivadas) or [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives_es&project=Derivatives.prj&file=README.mlx)
 
 ![MATLAB Versions Tested](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FMathWorks-Teaching-Resources%2FCalculus-Derivatives_es%2Frelease%2FImages%2FTestedWith.json)
@@ -23,7 +25,8 @@ Las instrucciones dentro de los live scripts te guiarán a través de los ejerci
 
 ## Contáctenos
 
-Las soluciones están disponibles a solicitud del instructor. Contacta al [equipo de recursos educativos de MathWorks](mailto:onlineteaching@mathworks.com) si deseas solicitar soluciones, proporcionar retroalimentación o si tienes alguna pregunta.
+Contacte al equipo de [MathWorks Educator Content Development](mailto:onlineteaching@mathworks.com) si desea solicitar asistencia, proporcionar comentarios, o si tiene alguna pregunta.
+
 
 <a name="H_30BC7141"></a>
 ## Prerrequisitos
@@ -99,14 +102,14 @@ La licencia para este módulo está disponible en el archivo [LICENSE.md](https:
 | [**Análisis de Fourier**](https://www.mathworks.com/matlabcentral/fileexchange/135291-analisis-de-fourier) | <img src="Images/image_12.png" width="171" alt="image_12.png"> | [<img src="Images/OpenInFX.png" width="91" alt="OpenInFX.png">](https://www.mathworks.com/matlabcentral/fileexchange/135291-analisis-de-fourier)<br>[<img src="Images/OpenInMO.png" width="136" alt="OpenInMO.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Fourier-Analysis_es&project=FourierAnalysis.prj)<br>[GitHub](https://github.com/MathWorks-Teaching-Resources/Fourier-Analysis_es)  |
 | <br>[**Métodos Numéricos con Aplicaciones** (en inglés)](https://www.mathworks.com/matlabcentral/fileexchange/111490-numerical-methods-with-applications) | <img src="Images/image_15.png" width="171" alt="image_15.png"> | <br>[<img src="Images/OpenInFX.png" width="91" alt="OpenInFX.png">](https://www.mathworks.com/matlabcentral/fileexchange/111490-numerical-methods-with-applications)<br>[<img src="Images/OpenInMO.png" width="136" alt="OpenInMO.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Numerical-Methods-with-Applications&project=NumericalMethods.prj)  <br>[GitHub](https://github.com/MathWorks-Teaching-Resources/Numerical-Methods-with-Applications)   |
 
-O siéntete libre de explorar nuestro otro [contenido modular de cursos](https://www.mathworks.com/matlabcentral/fileexchange/?q=tag%3A%22courseware+module%22&sort=downloads_desc_30d).
+O siéntete libre de explorar nuestro otro [contenido modular de cursos](https://www.mathworks.com/matlabcentral/fileexchange/?q=author%3A%22MathWorks+Educator+Content+Development+Team%22&sort=relevancy).
 
 # Recursos para Educadores
 -  [Página para Educadores](https://www.mathworks.com/academia/educators.html) 
 <a name="H_0FA5DA18"></a>
 # Contribuir 
 
-¿Buscas más? ¿Encontraste un problema? ¿Tienes una sugerencia? Por favor, contacta al [equipo de recursos educativos de MathWorks](mailto:%20onlineteaching@mathworks.com). Si deseas contribuir directamente a este proyecto, puedes encontrar información sobre cómo hacerlo en la página [CONTRIBUTING.md](https://github.com/MathWorks-Teaching-Resources/Calculus-Derivatives_es/blob/release/CONTRIBUTING.md) en GitHub.
+¿Buscas más? ¿Encontraste un problema? ¿Tienes una sugerencia? Por favor, contacta al [equipo de MathWorks Educator Content Development](mailto:%20onlineteaching@mathworks.com). Si deseas contribuir directamente a este proyecto, puedes encontrar información sobre cómo hacerlo en la página [CONTRIBUTING.md](https://github.com/MathWorks-Teaching-Resources/Calculus-Derivatives_es/blob/release/CONTRIBUTING.md) en GitHub.
 
 *©* Copyright 2024 The MathWorks™, Inc
 
