@@ -5,7 +5,7 @@ Aprenda cómo calcular derivadas, comprenda y utilice las reglas del producto y 
 
 [![View on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/173660-calculo-derivadas) or [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives_es&project=Derivatives.prj&file=README.mlx)
 
-![MATLAB Versions Tested](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FMathWorks-Teaching-Resources%2FCalculus-Derivatives_es%2Frelease%2FImages%2FTestedWith.json)
+[![MATLAB Versions Tested](https://img.shields.io/endpoint?url=https://mathworks-teaching-resources.github.io/Calculus-Derivatives_es/TestedWith.json)](https://MathWorks-Teaching-Resources.github.io/Calculus-Derivatives_es)
 
 **Módulo de Currículo**
 
