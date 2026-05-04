@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" name="CoursewareSmokeTests[Project=matlab.project.Project]" skipped="0" tests="15" time="142.3077">
+    <testcase classname="CoursewareSmokeTests[Project=matlab.project.Project]" name="runLearnerScriptSmokeTest(ScriptFile=CombinationRules.mlx)" time="22.3912"/>
+    <testcase classname="CoursewareSmokeTests[Project=matlab.project.Project]" name="runLearnerScriptSmokeTest(ScriptFile=Definition.mlx)" time="13.7698"/>
+    <testcase classname="CoursewareSmokeTests[Project=matlab.project.Project]" name="runLearnerScriptSmokeTest(ScriptFile=PowerRules.mlx)" time="5.0518"/>
+    <testcase classname="CoursewareSmokeTests[Project=matlab.project.Project]" name="runLearnerScriptSmokeTest(ScriptFile=TaylorPolynomials.mlx)" time="12.4908"/>
+    <testcase classname="CoursewareSmokeTests[Project=matlab.project.Project]" name="runLearnerScriptSmokeTest(ScriptFile=TranscendentalsRules.mlx)" time="22.0392"/>
+    <testcase classname="CoursewareSmokeTests[Project=matlab.project.Project]" name="verifySolutionScriptExists(ScriptFile=CombinationRules.mlx)" time="0.42401"/>
+    <testcase classname="CoursewareSmokeTests[Project=matlab.project.Project]" name="verifySolutionScriptExists(ScriptFile=Definition.mlx)" time="0.24381"/>
+    <testcase classname="CoursewareSmokeTests[Project=matlab.project.Project]" name="verifySolutionScriptExists(ScriptFile=PowerRules.mlx)" time="0.21471"/>
+    <testcase classname="CoursewareSmokeTests[Project=matlab.project.Project]" name="verifySolutionScriptExists(ScriptFile=TaylorPolynomials.mlx)" time="0.22566"/>
+    <testcase classname="CoursewareSmokeTests[Project=matlab.project.Project]" name="verifySolutionScriptExists(ScriptFile=TranscendentalsRules.mlx)" time="0.24673"/>
+    <testcase classname="CoursewareSmokeTests[Project=matlab.project.Project]" name="runSolutionScriptSmokeTest(ScriptFile=CombinationRules.mlx)" time="16.6155"/>
+    <testcase classname="CoursewareSmokeTests[Project=matlab.project.Project]" name="runSolutionScriptSmokeTest(ScriptFile=Definition.mlx)" time="9.3552"/>
+    <testcase classname="CoursewareSmokeTests[Project=matlab.project.Project]" name="runSolutionScriptSmokeTest(ScriptFile=PowerRules.mlx)" time="4.3333"/>
+    <testcase classname="CoursewareSmokeTests[Project=matlab.project.Project]" name="runSolutionScriptSmokeTest(ScriptFile=TaylorPolynomials.mlx)" time="11.7554"/>
+    <testcase classname="CoursewareSmokeTests[Project=matlab.project.Project]" name="runSolutionScriptSmokeTest(ScriptFile=TranscendentalsRules.mlx)" time="23.1506"/>
+  </testsuite>
+</testsuites>
